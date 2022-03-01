@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcus' Portfolio</title>
+
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <section class="hero" id="hero">
+        <h1>Marcus Herrera</h1>
+
+        <!-- Nav Menu -->
+        <nav>
+          <ul>
+            <li><a href="#my-work">My Work</a></li>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="hero-container">
+          <h2>Full <span>Stack</span> Developer</h2>
+          <img
+            src="./assets/images/me.png"
+            alt="Marcus Herrera"
+            class="marcus-pic"
+          />
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- My work -->
+      <section id="my-work">
+        <h2 class="work-header">My Work</h2>
+        <div class="work-grid">
+          <div class="card grid-span-3">
+            <a
+              href="https://mahiv87.github.io/wk2_miniProject/"
+              target="_blank"
+            >
+              <div class="container">
+                <img
+                  src="./assets/images/html_css.png"
+                  alt="CSS Cheatsheet"
+                  class="card-img"
+                />
+              </div>
+            </a>
+            <div class="details">
+              <h3>CSS Cheatsheet</h3>
+              <p>
+                A helpful page of CSS code snippets! Created using HTML, and
+                CSS.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="container">
+              <img
+                src="./assets/images/javascript.png"
+                alt="Javascript logo"
+                class="card-img"
+              />
+            </div>
+            <div class="details">
+              <h3>Javascript</h3>
+              <p>My Javascript project will go here!</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="container">
+              <img
+                src="./assets/images/react.png"
+                alt="React logo"
+                class="card-img"
+              />
+            </div>
+            <div class="details">
+              <h3>React</h3>
+              <p>My React project will go here!</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="container">
+              <img
+                src="./assets/images/node.png"
+                alt="NodeJS logo"
+                class="card-img"
+              />
+            </div>
+            <div class="details">
+              <h3>Node.js</h3>
+              <p>My Node project will go here!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section id="about-me">
+        <h2 class="about-header">About Me</h2>
+        <div class="about-content">
+          <img
+            src="./assets/images/me2.jpg"
+            alt="Marcus at Sky Pond"
+            class="marcus-pic2"
+          />
+          <p>
+            Hello! I'm a Full Stack Developer based in Denver, CO. My developer
+            journey began in February of 2022.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Me -->
+      <section id="contact-me">
+        <div>
+          <h2 class="contact-header">Contact</h2>
+
+          <!-- Contact Form -->
+          <form>
+            <h3>Have questions, or comments?</h3>
+            <p>
+              <label for="username">Name:</label>
+              <input class="text-input" id="email" type="text" />
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input class="text-input" id="email" type="text" />
+            </p>
+            <p>
+              <label for="comment">Comment:</label>
+              <textarea class="text-input" id="comment"></textarea>
+            </p>
+            <p>
+              <button>Submit</button>
+            </p>
+          </form>
+
+          <!-- My contact links -->
+          <div class="logos">
+            <a href="https://github.com/mahiv87" target="-blank">
+              <img
+                src="./assets/images/github.png"
+                alt="Github logo"
+                class="github"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/marcus-herrera-74453b227/"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/linkedin.png"
+                alt="LinkedIn logo"
+                class="linkedin"
+              />
+            </a>
+            <a href="mailto:maherreraiv1987@gmail.com" target="-blank">
+              <img
+                src="./assets/images/gmail.png"
+                alt="gmail logo"
+                class="gmail"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- To the top -->
+      <div class="to-the-top">
+          <a href="#hero">
+            <img src="./assets/images/TTT.png" alt="to the top icon">
+          </a>
+      </div>
+
+    <!-- Footer -->
+    <footer>
+      Built by<span
+        ><img src="./assets/images/mh_logo.png" alt="MH logo" class="mh-logo"
+      /></span>
+    </footer>
+  </body>
+</html>
