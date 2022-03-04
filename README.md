@@ -20,7 +20,8 @@ https://mahiv87.github.io/myPortfolio/
 
 ## Mock-up
 
-<iframe src="https://streamable.com/e/udamym?autoplay=1&nocontrols=1" width="928" height="480" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+![Screenshot](./assets/images/screenshot.gif)
+
 
 ---
 

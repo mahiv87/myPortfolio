@@ -128,22 +128,23 @@
           <h2 class="contact-header">Contact</h2>
 
           <!-- Contact Form -->
-          <form>
+          <form action="https://formspree.io/f/xvolrqnz"
+          method="POST">
             <h3>Have questions, or comments?</h3>
             <p>
               <label for="username">Name:</label>
-              <input class="text-input" id="email" type="text" />
+              <input class="text-input" id="name" type="text" required/>
             </p>
             <p>
               <label for="email">Email:</label>
-              <input class="text-input" id="email" type="text" />
+              <input class="text-input" id="email" type="email" name="email" required/>
             </p>
             <p>
               <label for="comment">Comment:</label>
-              <textarea class="text-input" id="comment"></textarea>
+              <textarea class="text-input" id="comment" name="message" required></textarea>
             </p>
             <p>
-              <button>Submit</button>
+              <button type="submit">Send</button>
             </p>
           </form>
 

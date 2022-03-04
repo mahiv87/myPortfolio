@@ -231,15 +231,20 @@ form p {
   color: var(--light);
 }
 
-label {
+form label {
   display: block;
 }
 
-button {
+form button {
   display: block;
   margin-inline: auto;
   background-color: var(--medium);
+  font-weight: bold;
+  font-size: 24px;
   color: var(--black);
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
 }
 
 .text-input {
