@@ -38,16 +38,22 @@ h1 {
 nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  margin-right: 50px;
+  justify-content: flex-end;  
+}
+
+nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 ul {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  width: 30rem;
-  font-size: 2rem;
+  width: 25rem;
+  font-size: 1.5rem;
 }
 
 li a {
@@ -61,15 +67,18 @@ li a:focus {
   transition: all 0.4s ease-in-out;
 }
 
+/* Hero styling */
+
 .hero-container {
   display: grid;
-  grid-template-columns:5% 90%;
+  grid-template-columns: 5% 90%;
 }
 
 .hero-container h2 {
-  font-size: 1.8rem;
+  font-size: min(1.8rem, 2.9vh);
   writing-mode: vertical-lr;
   text-orientation: upright;
+  padding-bottom: 0px;
 }
 
 .hero-container h2 span {
@@ -81,7 +90,7 @@ li a:focus {
   justify-self: center;
   border-radius: 30px;
   box-shadow: 5px 8px 10px #000000;
-  max-width: 95%;
+  max-height: 70vh;
 }
 
 /* My Work section */
@@ -99,15 +108,15 @@ li a:focus {
   display: flex;
   justify-content: center;
   font-family: "Unica One", cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--medium);
 }
 
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  width: min(95%, 70rem);
+  width: min(95%, 60rem);
   margin-inline: auto;
 }
 
@@ -173,6 +182,7 @@ li a:focus {
 .about-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  align-items: center;
   gap: 1rem;
   padding: 0 1.5rem;
   min-height: 50vh;
@@ -186,7 +196,7 @@ li a:focus {
   grid-template-columns: 1fr;
   text-align: center;
   font-family: "Unica One", cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--medium);
   margin-top: 5rem;
 }
@@ -197,8 +207,9 @@ li a:focus {
 }
 
 .about-content p {
-  font-size: 1.6rem;
+  font-size: 18px;
   max-width: 60ch;
+  padding: 0px 30px;
 }
 
 /* Contact Me style */
@@ -207,7 +218,7 @@ li a:focus {
   display: flex;
   justify-content: center;
   font-family: "Unica One", cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--medium);
   /* margin-top: 5rem; */
 }
@@ -223,7 +234,7 @@ form {
 
 form h3 {
   text-align: center;
-  font-size: 150%;
+  font-size: 125%;
 }
 
 form p {
@@ -240,10 +251,10 @@ form button {
   margin-inline: auto;
   background-color: var(--medium);
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   color: var(--black);
-  width: 80px;
-  height: 80px;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50px;
 }
 
@@ -264,24 +275,23 @@ form button {
   justify-content: center;
 }
 
-.github {
-  width: 5rem;
-  height: 5rem;
-  margin: 1rem;
-}
-
 .linkedin {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   margin: 1rem;
 }
 
-.gmail {
-  width: 5rem;
-  height: 5rem;
+.github {
+  width: 4rem;
+  height: 4rem;
   margin: 1rem;
 }
 
+.twitter {
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem;
+}
 
 /* To the top icon */
 
@@ -313,7 +323,7 @@ footer {
   max-width: 20px;
 }
 
-/* Media Queries */
+/* Media Queries for Width */
 
 @media screen and (max-width: 992px) {
   .about-content {
@@ -324,6 +334,10 @@ footer {
 
   p {
     margin-top: 20px;
+  }
+
+  nav.sticky {
+    position: relative;
   }
 }
 
@@ -389,4 +403,3 @@ footer {
     grid-column: span 1;
   }
 }
-
