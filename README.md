@@ -20,7 +20,7 @@ https://mahiv87.github.io/myPortfolio/
 
 ## Mock-up
 
-![Screenshot](./assets/images/screenshot.gif)
+![GIF of webpage](./assets/images/screenshot.gif)
 
 
 ---
