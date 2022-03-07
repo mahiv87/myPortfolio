@@ -38,7 +38,8 @@ h1 {
 nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;  
+  justify-content: flex-end;
+  max-width: 2560px;  
 }
 
 nav.sticky {
@@ -54,6 +55,7 @@ ul {
   list-style-type: none;
   width: 25rem;
   font-size: 1.5rem;
+  padding-left: 0;
 }
 
 li a {
@@ -362,6 +364,10 @@ footer {
     margin: 10px 0px;
   }
 
+  .marcus-pic {
+    max-width: 95%;
+  }
+
   .work-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -372,7 +378,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 490px) {
   .hero h1 {
     font-size: 3rem;
     text-align: center;
@@ -401,5 +407,17 @@ footer {
 
   .grid-span-3 {
     grid-column: span 1;
+  }
+}
+
+@media screen and (max-height: 965px) {
+  .work-grid {
+   width: min(95%, 50rem);
+  }
+}
+
+@media screen and (max-height: 840px) {
+  .work-grid {
+   width: min(95%, 40rem);
   }
 }
