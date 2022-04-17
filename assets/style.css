@@ -127,8 +127,13 @@ li a:focus {
 }
 
 .work-grid a {
-  text-decoration: none;
-  color: var(--light);
+  text-decoration: underline;
+  color: var(--medium);
+}
+
+.work-grid a:hover {
+  text-decoration: underline;
+  color: var(--lightMedium);
 }
 
 .card {
@@ -212,6 +217,16 @@ li a:focus {
   font-size: 18px;
   max-width: 60ch;
   padding: 0px 30px;
+}
+
+#resume-link {
+  color: var(--medium);
+  font-size: 1.5rem;
+}
+
+#resume-link:hover {
+  color: var(--lightMedium);
+  font-size: 1.5rem;
 }
 
 /* Contact Me style */
